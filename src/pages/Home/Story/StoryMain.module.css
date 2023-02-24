@@ -1,0 +1,50 @@
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 730px;
+  z-index: -1;
+  filter:brightness(0.5);
+}
+
+.background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+h1, h2 {
+  color: white;
+  text-align: center;
+  max-width: 600px;
+
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 0rem auto;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1rem auto;
+}
+
+.mainStory {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  padding: 75px 0;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.main {
+  padding: 70px 70px;
+
+}

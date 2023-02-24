@@ -1,12 +1,19 @@
-body {
-  margin: 0;
-  background-color: transparent;
-}
-
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family:Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  display: block;
+}
+
+body {
+  margin: 0;
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Enjoy on your TV.",
+    "subtitle": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
+    "image": "",
+    "alt": "rotating display of netflix shows",
+    "direction": "row"
+  },
+  {
+    "id": 2,
+    "title": "Watch everywhere",
+    "subtitle": "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.",
+    "image": "",
+    "alt": "different shows showing on different devices",
+    "direction": "row-reverse"
+  },
+  {
+    "id": 3,
+    "title": "Create profiles for kids.",
+    "subtitle": "Send kids on adventures with their favorite characters in a space made just for them—free with your membership.",
+    "image": "",
+    "alt": "kids and bunny",
+    "direction": "row"
+  },
+  {
+    "id": 4,
+    "title": "Download your shows to watch offline.",
+    "subtitle": "Only available on ad-free plans.",
+    "image": "",
+    "alt": "stranger Things",
+    "direction": "row-reverse"
+  }
+]

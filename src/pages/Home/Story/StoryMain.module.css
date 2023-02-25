@@ -1,11 +1,12 @@
 .main {
-  padding: 70px 70px;
+  padding: 50px 5%;
+  height: 460px;
   color: white;
   background: transparent;
   width: 100%;
   border-bottom: 8px solid #222;
   overflow: hidden;
-  height: 632px;
+
 }
 
 .background {
@@ -13,7 +14,7 @@
   top: 0;
   right: 0;
   left: 0;
-  height: 700px;
+  height: 520px;
   z-index: -1;
   filter:brightness(0.5);
 }
@@ -31,14 +32,14 @@
 }
 
 .title {
-  font-size: 3.2rem;
+  font-size: 1.75rem;
   margin: 0rem auto;
 }
 
 .subtitle {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 400;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
 }
 
 .mainStory {
@@ -51,36 +52,55 @@
   width: 100%;
   text-align: center;
   overflow-x: hidden;
+  padding-top: 30px;
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 550px) and (max-width: 949px) {
   .background {
     height: 730px;
   }
-  .main {
-    padding: 50px 5%;
-    height: 670px;
-  }
-}
 
-@media screen and (max-width: 550px) {
   .title {
-    font-size: 1.75rem;
-    margin: 0rem auto;
+    font-size: 3.125rem;
   }
 
   .subtitle {
-    font-size: 1.125rem;
-    font-weight: 400;
-    margin: 0.5rem auto;
-  }
+    font-size: 1.625rem;
+    margin: 1rem auto;
 
-  .background {
-    height: 520px;
   }
 
   .main {
-    height: 460px;
+    padding: 70px 70px;
+    height: 670px;
+  }
+  .mainStory {
+    padding-top: 75px;
+
+  }
+}
+
+@media screen and (min-width: 949px) {
+  .background {
+    height: 700px;
+  }
+
+  .main {
+    padding: 70px 70px;
+    height: 632px;
+  }
+
+  .title {
+    font-size: 3.125rem;
+  }
+
+  .subtitle {
+    font-size: 1.625rem;
+    margin: 1rem auto;
+  }
+
+  .mainStory {
+    padding-top: 75px;
   }
 }

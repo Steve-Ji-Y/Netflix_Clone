@@ -1,7 +1,7 @@
 .input {
   padding: 10px 10px 0;
-  min-width: 450px;
-  height: 60px;
+  width:100%;
+  min-height: 100%;
   padding-top: 10px;
   font-size: 1.5rem;
 }
@@ -13,42 +13,40 @@
 .label {
   position: absolute;
   margin-left: 0.7rem;
-  top:25%;
+  top: 30%;
   color: #8c8c8c;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
 }
 
 .labelWrapper {
   display: block;
-  height: 60px;
+  height: 40px;
   position: relative;
-  min-width: 280px;
+  width: 100%
 }
 
 
 
-
-@media screen and (max-width: 950px) {
-
-  .label {
-    font-size: 1.2rem;
-    min-height: 40px;
-    position: absolute;
-    top: 25%
-  };
-
-}
-
-
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 550px) and (max-width: 739px) {
   .input {
     width:100%;
-    min-width: fit-content;
   }
 
   .label {
     font-size: 1rem;
     top: 30%;
   }
+}
+
+
+@media screen and (min-width: 740px) {
+  .labelWrapper {
+    font-size: 1.2rem;
+    height: 60px;
+    top: 25%;
+    min-width: 450px;
+  };
+
+
 }

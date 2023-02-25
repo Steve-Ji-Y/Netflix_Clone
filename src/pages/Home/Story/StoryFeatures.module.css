@@ -1,16 +1,30 @@
 .features {
   color: white;
   text-align: center;
+  background-color: #000;
 }
 
 .features h1 {
   font-size: 1.625rem;
+  margin-bottom: 5px;
 }
 
 .features h2 {
   font-size: 1.125rem;
   font-weight: 400;
+  margin-bottom: 5px;
 }
+
+
+.cardOuterWrapper {
+  border-bottom: 8px solid #222;
+}
+
+.cardWrapper {
+  padding: 50px 5%;
+
+}
+
 
 .cardImg {
   max-width: 600px;
@@ -25,6 +39,50 @@
 }
 
 
-.cardWrapper {
-  padding: 50px 5%;
+@media screen and (min-width: 550px) and (max-width: 949px) {
+  .cardWrapper {
+    padding: 70px 45px;
+  }
+
+  .features h1 {
+    font-size: 2.5rem;
+  }
+  .features h2 {
+    font-size: 1.25rem;
+  }
+  .cardImg {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .cardWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+
+  .features h1 {
+    font-size: 3.125rem;
+    line-height:1.1
+  }
+  .features h2 {
+    font-size: 1.625rem;
+
+  }
+
+  .cardWrapper:nth-child(odd) > :first-child {
+    padding: 0 3rem 0 0;
+  }
+
+  .cardWrapper:nth-child(even) > :first-child {
+    padding: 0 0 0 3rem;
+  }
+
+  .cardWrapper {
+    padding: 70px 45px;
+  }
 }

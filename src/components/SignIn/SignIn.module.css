@@ -2,19 +2,20 @@
   display: block;
   background-color: #e50914;
   color: white;
-  height: auto;
   font-size: 1rem;
   text-decoration: none;
-  padding: 0.43rem 1.1rem;
   border-radius: 3px;
   line-height: normal;
   font-weight: 420;
+  height: 0.95 rem;
+  padding: 0.25rem 0.5rem;
 }
 
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (min-width: 500px) {
   .signin{
-    height: 0.95 rem;
-    padding: 0.25rem 0.5rem;
+    height: auto;
+    padding: 0.43rem 1.1rem;
   }
 }

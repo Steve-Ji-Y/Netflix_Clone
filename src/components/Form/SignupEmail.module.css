@@ -1,19 +1,24 @@
 .signupWrapper {
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .emailSignup {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position:relative;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
 
 }
 
 .promotionMsg {
   display: block;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   padding-bottom: 20px;
   font-weight: 400;
   max-width: 700px;
@@ -21,29 +26,45 @@
 }
 
 .getStarted {
-  font-size: 1.625rem;
+  font-size: 1rem;
   background-color: #e50914;
   color: #fff;
   border: none;
   padding: 0.7rem;
-  min-height: 60px;
+  min-height: 40px;
   border-radius: 3px;
   width: fit-content;
 }
 
 
-@media screen and (max-width: 950px) {
-  .emailSignup {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  .getStarted {
-    font-size: 1rem;
-    min-height: 40px;
-  };
+@media screen and (min-width: 550px) and (max-width: 949px) {
+
   .promotionMsg {
-    font-size: 1rem;
+    font-size: 1.125rem;
     min-height: 60px;
+  }
+
+}
+
+@media screen and (min-width: 740px) {
+
+}
+
+@media screen and (min-width: 950px) {
+  .emailSignup {
+    flex-direction: row;
+    gap: 0;
+  }
+  .signupWrapper {
+    padding-bottom: 30px;
+  }
+
+  .getStarted {
+    font-size: 1.3rem;
+    min-height: 60px;
+    white-space: nowrap;
+  }
+  .promotionMsg {
+    font-size: 1.2rem;
   }
 }

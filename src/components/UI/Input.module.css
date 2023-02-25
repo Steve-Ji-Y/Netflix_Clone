@@ -23,7 +23,12 @@
   display: block;
   height: 60px;
   position: relative;
+  min-width: 280px;
 }
+
+
+
+
 @media screen and (max-width: 950px) {
 
   .label {
@@ -34,8 +39,16 @@
   };
 
 }
+
+
 @media screen and (max-width: 550px) {
+  .input {
+    width:100%;
+    min-width: fit-content;
+  }
+
   .label {
-    min-width: 100%;
+    font-size: 1rem;
+    top: 30%;
   }
 }

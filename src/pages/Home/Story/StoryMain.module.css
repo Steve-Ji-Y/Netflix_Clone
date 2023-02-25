@@ -2,7 +2,10 @@
   padding: 70px 70px;
   color: white;
   background: transparent;
+  width: 100%;
+  border-bottom: 8px solid #222;
   overflow: hidden;
+  height: 632px;
 }
 
 .background {
@@ -13,7 +16,6 @@
   height: 700px;
   z-index: -1;
   filter:brightness(0.5);
-
 }
 
 .background img {
@@ -45,10 +47,10 @@
   flex-direction: column;
   margin: 0 auto;
   position: relative;
-  padding: 70px 20px 0;
   max-width: 900px;
   width: 100%;
   text-align: center;
+  overflow-x: hidden;
 }
 
 
@@ -58,9 +60,7 @@
   }
   .main {
     padding: 50px 5%;
-    color: white;
-    background: transparent;
-    overflow: hidden;
+    height: 670px;
   }
 }
 
@@ -80,4 +80,7 @@
     height: 520px;
   }
 
+  .main {
+    height: 460px;
+  }
 }

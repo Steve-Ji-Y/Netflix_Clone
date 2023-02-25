@@ -1,0 +1,30 @@
+.features {
+  color: white;
+  text-align: center;
+}
+
+.features h1 {
+  font-size: 1.625rem;
+}
+
+.features h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.cardImg {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+
+.featureImg {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.cardWrapper {
+  padding: 50px 5%;
+}

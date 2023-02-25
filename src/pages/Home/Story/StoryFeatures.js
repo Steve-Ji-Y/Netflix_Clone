@@ -13,7 +13,7 @@ const StoryFeature = () => {
             <h2>{item.subtitle}</h2>
           </Card>
           <Card className={styles.cardImg}>
-            <img src={item.image} alt={item.alt}></img>
+            <img className={styles.featureImg} src={item.image} alt={item.alt}></img>
           </Card>
         </div> )
       })}

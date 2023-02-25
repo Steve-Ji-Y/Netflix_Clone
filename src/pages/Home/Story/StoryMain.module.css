@@ -1,11 +1,19 @@
+.main {
+  padding: 70px 70px;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+}
+
 .background {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  height: 730px;
+  height: 700px;
   z-index: -1;
   filter:brightness(0.5);
+
 }
 
 .background img {
@@ -14,19 +22,18 @@
   object-fit: cover;
 }
 
-h1, h2 {
-  color: white;
+.title, .subtitle {
   text-align: center;
   max-width: 600px;
 
 }
 
-h1 {
+.title {
   font-size: 3.2rem;
   margin: 0rem auto;
 }
 
-h2 {
+.subtitle {
   font-size: 1.8rem;
   font-weight: 400;
   margin: 1rem auto;
@@ -38,13 +45,39 @@ h2 {
   flex-direction: column;
   margin: 0 auto;
   position: relative;
-  padding: 75px 0;
+  padding: 70px 20px 0;
   max-width: 900px;
   width: 100%;
   text-align: center;
 }
 
-.main {
-  padding: 70px 70px;
+
+@media screen and (max-width: 950px) {
+  .background {
+    height: 730px;
+  }
+  .main {
+    padding: 50px 5%;
+    color: white;
+    background: transparent;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 1.75rem;
+    margin: 0rem auto;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0.5rem auto;
+  }
+
+  .background {
+    height: 520px;
+  }
 
 }

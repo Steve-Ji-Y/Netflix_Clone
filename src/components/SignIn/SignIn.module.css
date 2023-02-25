@@ -3,17 +3,16 @@
   background-color: #e50914;
   color: white;
   height: auto;
-  border: 0;
   font-size: 1rem;
   text-decoration: none;
-  padding: 0.35rem 0.75rem;
+  padding: 0.43rem 1.1rem;
   border-radius: 3px;
   line-height: normal;
-  font-weight: 450;
+  font-weight: 420;
 }
 
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 500px) {
   .signin{
     height: 0.95 rem;
     padding: 0.25rem 0.5rem;

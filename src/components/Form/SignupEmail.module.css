@@ -1,0 +1,49 @@
+.signupWrapper {
+  margin: 0 auto;
+}
+
+.emailSignup {
+  display: flex;
+  flex-direction: row;
+  position:relative;
+  justify-content: center;
+
+}
+
+.promotionMsg {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.getStarted {
+  font-size: 1.625rem;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 0.7rem;
+  min-height: 60px;
+  border-radius: 3px;
+  width: fit-content;
+}
+
+
+@media screen and (max-width: 950px) {
+  .emailSignup {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .getStarted {
+    font-size: 1rem;
+    min-height: 40px;
+  };
+  .promotionMsg {
+    font-size: 1rem;
+    min-height: 60px;
+  }
+}

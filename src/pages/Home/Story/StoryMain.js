@@ -5,6 +5,7 @@ import styles from "./StoryMain.module.css"
 import smallbg from "../../../assets/images/home-bg-small.jpg"
 import mediumbg from "../../../assets/images/home-bg-medium.jpg"
 import largebg from "../../../assets/images/home-bg-large.jpg"
+import SignupEmail from "../../../components/Form/SignupEmail";
 
 const StoryMain = () => {
   return (
@@ -13,9 +14,10 @@ const StoryMain = () => {
         <img src={smallbg} srcSet={`${smallbg} 900w, ${mediumbg} 1400w, ${largebg} 1800w`} alt="bakground"></img>
       </div>
       <div className={styles.mainStory}>
-      <h1> {mainData.title}</h1>
-        <h2> {mainData.subtitle}</h2>
+        <h1 className={styles.title}> {mainData.title}</h1>
+        <h2 className={styles.subtitle}> {mainData.subtitle}</h2>
       </div>
+      <SignupEmail/>
     </div>
   );
 };

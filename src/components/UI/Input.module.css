@@ -1,0 +1,41 @@
+.input {
+  padding: 10px 10px 0;
+  min-width: 450px;
+  height: 60px;
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
+
+.input:focus {
+  outline: 1px solid blue;
+}
+
+.label {
+  position: absolute;
+  margin-left: 0.7rem;
+  top:25%;
+  color: #8c8c8c;
+  font-size: 1.2rem;
+
+}
+
+.labelWrapper {
+  display: block;
+  height: 60px;
+  position: relative;
+}
+@media screen and (max-width: 950px) {
+
+  .label {
+    font-size: 1.2rem;
+    min-height: 40px;
+    position: absolute;
+    top: 25%
+  };
+
+}
+@media screen and (max-width: 550px) {
+  .label {
+    min-width: 100%;
+  }
+}

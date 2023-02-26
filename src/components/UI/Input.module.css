@@ -13,9 +13,9 @@
 .label {
   position: absolute;
   margin-left: 0.7rem;
-  top: 30%;
+  top: 26%;
   color: #8c8c8c;
-  font-size: 1rem;
+  font-size: 14px;
 
 }
 
@@ -34,8 +34,8 @@
   }
 
   .label {
+    top: 32%;
     font-size: 1rem;
-    top: 30%;
   }
 }
 
@@ -44,9 +44,12 @@
   .labelWrapper {
     font-size: 1.2rem;
     height: 60px;
-    top: 25%;
+    top: 30%;
     min-width: 450px;
-  };
-
+  }
+  .label {
+    top: 32%;
+    font-size: 1rem;
+  }
 
 }

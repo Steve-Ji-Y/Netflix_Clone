@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./SignIn.module.css"
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
-      <a href="/" className={styles.signin}>Sign In</a>
+      <Link to="login" className={styles.signin}>Sign In</Link>
   )
 }
 

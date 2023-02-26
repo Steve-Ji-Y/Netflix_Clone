@@ -1,5 +1,5 @@
 .logo {
-  height: 1.7rem;
+  height: 1.5rem;
 }
 
 
@@ -8,21 +8,14 @@
 }
 
 
-@media only screen and (min-width: 500px) and (max-width: 949px) {
+@media only screen and (min-width: 550px) and (max-width: 949px) {
   .logo {
     height: 2rem;
   }
 }
 
-@media only screen and (min-width: 950px) and (max-width: 1449px) {
+@media only screen and (min-width: 950px) {
   .logo {
-    height: 2.5rem;
-  }
-}
-
-
-@media only screen and (min-width: 1450px)  {
-  .logo {
-    height: 3rem;
+    height: 2.25rem;
   }
 }

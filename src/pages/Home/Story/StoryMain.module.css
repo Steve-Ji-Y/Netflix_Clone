@@ -5,7 +5,6 @@
   background: transparent;
   width: 100%;
   border-bottom: 8px solid #222;
-  overflow: hidden;
 
 }
 
@@ -55,6 +54,11 @@
   padding-top: 30px;
 }
 
+@media screen and (max-width: 320px) {
+  .background {
+    width: auto;
+  }
+}
 
 @media screen and (min-width: 550px) and (max-width: 949px) {
   .background {

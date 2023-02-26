@@ -28,8 +28,18 @@
   font-weight: 550;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 450px) and (max-width: 739px) {
+  .inputDark label{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 740px) {
   .inputDark {
     min-width: 100%
+  }
+
+  .inputDark label{
+    font-size: 16px;
   }
 }

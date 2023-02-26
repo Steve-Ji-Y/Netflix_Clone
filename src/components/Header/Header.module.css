@@ -14,7 +14,8 @@
   margin: 0 auto;
   position: relative;
   top:0;
-  right:0
+  right:0;
+  min-width: 320px;
 }
 
 

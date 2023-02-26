@@ -2,10 +2,11 @@ import React from "react";
 // import Form from "../../../components/Form/Form.js";
 import mainData from "../../../data/home-main.json";
 import styles from "./StoryMain.module.css";
-import smallbg from "../../../assets/images/home-bg-small.jpg";
-import mediumbg from "../../../assets/images/home-bg-medium.jpg";
-import largebg from "../../../assets/images/home-bg-large.jpg";
 import SignupEmail from "../../../components/Form/SignupEmail";
+
+const smallbg = process.env.PUBLIC_URL + "/images/home-bg-small.jpg";
+const mediumbg = process.env.PUBLIC_URL + "/images/home-bg-medium.jpg";
+const largebg = process.env.PUBLIC_URL + "/images/home-bg-large.jpg";
 
 const StoryMain = () => {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./SignInForm.module.css";
+import styles from "./LoginForm.module.css";
 import Input from "../../components/UI/Input";
+import Button from "../../components/UI/Button";
 
 const SignInForm = () => {
   return (
@@ -11,6 +12,7 @@ const SignInForm = () => {
       <div className={styles.inputPassword}>
         <Input label={'Password'} input={{ id: "User_password" }} type={'password'} className={styles.inputDark}></Input>
       </div>
+      <Button className={styles.signinBtn}>Sign In</Button>
     </form>
   );
 };

@@ -58,7 +58,7 @@
 
 @media screen and (min-width: 550px) and (max-width: 949px) {
   .background {
-    height: 730px;
+    height: 750px;
   }
 
   .title {
@@ -83,7 +83,7 @@
 
 @media screen and (min-width: 949px) {
   .background {
-    height: 700px;
+    height: 750px;
   }
 
   .main {

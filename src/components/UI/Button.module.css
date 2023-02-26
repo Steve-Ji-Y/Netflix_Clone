@@ -1,0 +1,13 @@
+.defaultBtn {
+  background-color: #e50914;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 50px;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}

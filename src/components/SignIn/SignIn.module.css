@@ -2,7 +2,7 @@
   display: block;
   background-color: #e50914;
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
   border-radius: 3px;
   line-height: normal;
@@ -18,5 +18,6 @@
   .signin{
     height: auto;
     padding: 0.43rem 1.1rem;
+    font-size: 1rem;
   }
 }

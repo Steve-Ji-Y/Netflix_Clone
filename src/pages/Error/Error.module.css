@@ -1,0 +1,62 @@
+
+.errorPageWrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 68px;
+  font-size: 1.5vw;
+  height: 100vh;
+  overflow: hidden;
+  background: no-repeat url('../../../public/images/error-bg.png');
+  background-position: 50%;
+  background-size: cover;
+
+
+}
+
+.errorHeader {
+  position: fixed;
+  background-color: #000;
+  height: 68px;
+  padding: 0 40px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.errorLogo {
+  height: 25px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.errorPageWrapper:before, .errorPageWrapper:after {
+  content: '';
+  height: 25%;
+}
+
+
+@media screen and (min-width: 480px) {
+  .errorPageWrapper {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .errorPageWrapper {
+    font-size: 0.85vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .errorPageWrapper {
+    font-size: 0.75vw;
+  }
+}

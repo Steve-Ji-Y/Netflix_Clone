@@ -19,6 +19,7 @@
   padding: 0;
   font-size: 1.125rem;
   margin: 1.25em auto;
+  max-width: 815px;
 }
 
 .faqItem {
@@ -103,5 +104,11 @@
    padding: 2rem;
   }
 
+}
 
+
+@media screen and (min-width: 1450px) {
+  .faqList {
+    margin: 2em auto;
+  }
 }

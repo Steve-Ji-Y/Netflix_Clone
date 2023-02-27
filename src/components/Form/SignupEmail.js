@@ -12,7 +12,7 @@ const SignupEmail = () => {
       </h3>
       <div className={styles.emailSignup}>
         {/* this can be moved to generic UI input to trigger on focus label position & size change */}
-          <Input label="Email Address" input={{ id: "newUser_email" }}></Input>
+          <Input label="Email Address" input={{ id: "newUser_email" }} className={styles.signupInput}></Input>
         <Button className={styles.getStarted}>{`Get Started >`}</Button>
       </div>
     </form>

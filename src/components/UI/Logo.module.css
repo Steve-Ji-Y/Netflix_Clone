@@ -19,3 +19,10 @@
     height: 2.25rem;
   }
 }
+
+
+@media only screen and (min-width: 1450px) {
+  .logo {
+    height: 45px;
+  }
+}

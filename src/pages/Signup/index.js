@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import Logo from "../../components/UI/Logo";
-import styles from "./Login.module.css";
-import LoginBody from "./LoginBody";
-import LoginBackground from "./LoginBackground";
+import styles from "./Signup.module.css";
+import SignupBody from "./SignupBody";
+import SignupBackground from "./SignupBackground";
 
 // TODO: fix logo by using an actual SVG as the sizing needs to be different from Home's logo sizing
 
@@ -21,11 +21,11 @@ const Login = () => {
 
   return (
     <div className={styles["login-wrapper"]}>
-      {isScreenLarge && <LoginBackground />}
+      {isScreenLarge && <SignupBackground />}
       <div className={styles.loginHeader}>
         <Logo className={styles.loginLogo}/>
       </div>
-      <LoginBody />
+      <SignupBody />
     </div>
   );
 };

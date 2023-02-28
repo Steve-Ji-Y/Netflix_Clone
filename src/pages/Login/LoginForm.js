@@ -2,8 +2,7 @@ import React, { useRef } from "react";
 import styles from "./LoginForm.module.css";
 import Input from "../../components/UI/Input";
 import Button from "../../components/UI/Button";
-import { auth } from "../../auth/firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { useAuth } from "../../context/AuthContext";
 import useInput from "../../hooks/useInput";
 
 const errorMsgUserName = "Please enter a valid email or phone number";
@@ -15,11 +14,11 @@ const ErrorMsg = (props) => {
   return <div className={styles.errorMsg}>{props.msg}</div>;
 };
 
-
 const SignInForm = (props) => {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
 
+  const { login }= useAuth();
 
   const {
     value: enteredEmail,
@@ -49,14 +48,10 @@ const SignInForm = (props) => {
       return;
     } else {
       try {
-        const result = await signInWithEmailAndPassword(
-          auth,
-          enteredEmail,
-          enteredPassword
-        );
+        const result = await login(enteredEmail, enteredPassword);
         console.log(result);
       } catch (error) {
-        console.log(error);
+        console.log('error');
         props.isLoginSucess(false);
       }
     }

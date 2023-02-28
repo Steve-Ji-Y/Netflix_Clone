@@ -4,7 +4,9 @@ import Login from "./pages/Login/index";
 import ErrorPage from "./pages/Error/index";
 import Signup from "./pages/Signup/index";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { AuthProider } from "./context/AuthContext";
+import { AuthProvider } from "./context/AuthContext";
+
+
 
 const router = createBrowserRouter([
   {
@@ -18,9 +20,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <AuthProider>
+    <AuthProvider>
       <RouterProvider router={router} />
-    </AuthProider>
+    </AuthProvider>
   );
 }
 

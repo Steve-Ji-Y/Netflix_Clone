@@ -1,8 +1,9 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect, useCallback } from "react";
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  signOut,
 } from "firebase/auth";
 import { auth } from "../auth/firebase";
 
@@ -14,34 +15,44 @@ export function useAuth() {
 
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState();
+  const [uid, setUid] = useState(JSON.parse(localStorage.getItem("uid")));
 
-  function login(email, password) {
-      return signInWithEmailAndPassword(auth, email, password);
+  const login = useCallback((email, password) => {
+    return signInWithEmailAndPassword(auth, email, password);
+  }, []);
 
-  }
-
-  function signup(email, password) {
+  const signup = useCallback((email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
-  }
+  }, []);
 
-  function logout() {
-    return auth.signOut();
-  }
+  const logout = useCallback(() => {
+    return signOut(auth);
+  }, []);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setCurrentUser(user);
+      if (user) {
+        setCurrentUser(user);
+        setUid(user.uid);
+        localStorage.setItem("uid", JSON.stringify(user.uid));
+      } else {
+        setCurrentUser(null);
+        setUid(null);
+        localStorage.setItem("uid", JSON.stringify(null));
+      }
     });
-
     return unsubscribe;
   }, []);
 
   const value = {
-    currentUser,
+    user: currentUser,
     login,
     logout,
     signup,
+    uid,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
+
+export default AuthContext;

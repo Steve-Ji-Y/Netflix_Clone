@@ -4,6 +4,8 @@ import Input from "../../components/UI/Input";
 import Button from "../../components/UI/Button";
 import { useAuth } from "../../context/AuthContext";
 import useInput from "../../hooks/useInput";
+import { useNavigate } from "react-router-dom";
+
 
 const errorMsgUserName = "Please enter a valid email or phone number";
 
@@ -17,8 +19,10 @@ const ErrorMsg = (props) => {
 const SignInForm = (props) => {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
+  const navigate = useNavigate();
+  const { login } = useAuth();
 
-  const { login }= useAuth();
+
 
   const {
     value: enteredEmail,
@@ -49,10 +53,14 @@ const SignInForm = (props) => {
     } else {
       try {
         const result = await login(enteredEmail, enteredPassword);
-        console.log(result);
+        const { uid } = result.user;
+        console.log(uid);
+        if (uid) {
+          navigate("../browse")
+        }
       } catch (error) {
-        console.log('error');
-        props.isLoginSucess(false);
+        console.log("error");
+        props.setLoginStatus(false);
       }
     }
   };

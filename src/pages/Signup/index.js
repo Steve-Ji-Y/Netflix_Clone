@@ -14,8 +14,8 @@ const Login = () => {
   return (
     <div className={styles["login-wrapper"]}>
       {isScreenLarge && <Background />}
-      <div className={styles.loginHeader}>
-        <Logo className={styles.loginLogo}/>
+      <div className={styles.signupHeader}>
+        <Logo className={styles.signupLogo}/>
       </div>
       <SignupBody />
     </div>

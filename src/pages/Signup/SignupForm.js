@@ -4,6 +4,7 @@ import Input from "../../components/UI/Input";
 import Button from "../../components/UI/Button";
 import useInput from "../../hooks/useInput";
 import { useAuth } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const errorMsgUserName = "Please enter a valid email or phone number";
 
@@ -19,7 +20,8 @@ const ErrorMsg = (props) => {
 const SignInForm = (props) => {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-  const { login } = useAuth();
+  const { signup } = useAuth();
+  const navigate = useNavigate();
 
   const {
     value: enteredEmail,
@@ -29,7 +31,10 @@ const SignInForm = (props) => {
     valueBlurHandler: emailBlurHandler,
     isValid: enteredEmailIsValid,
     validate: validateEmail,
-  } = useInput((value) => value.length > 4);
+  } = useInput((email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  });
 
   const {
     value: enteredPassword,
@@ -49,12 +54,17 @@ const SignInForm = (props) => {
       return;
     } else {
       try {
-        const result = await login(enteredEmail, enteredPassword);
+        const result = await signup(enteredEmail, enteredPassword);
         console.log(result);
+        if (result.code !== 400) {
+          navigate("../browse")
+        } else {
+          console.log(result);
+        }
       } catch (error) {
-        console.log(error);
-        props.isLoginSucess(false);
+        console.log(error)
       }
+
     }
   };
 
@@ -91,7 +101,7 @@ const SignInForm = (props) => {
         ></Input>
         {passwordInputHasError && <ErrorMsg msg={errorMsgPassword} />}
       </div>
-      <Button className={styles.signinBtn}>Sign Up</Button>
+      <Button className={styles.signupBtn}>Sign Up</Button>
     </form>
   );
 };

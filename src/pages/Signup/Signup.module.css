@@ -1,15 +1,15 @@
-.login-wrapper {
+.signup-wrapper {
   background-color: #000;
   height: 100vh;
   overflow: hidden;
 }
 
-.loginHeader {
+.signupHeader {
   height: 45px;
   position: relative;
 }
 
-.loginLogo {
+.signupLogo {
   margin-left: 3%;
   height: 20px;
   position: absolute;
@@ -20,22 +20,22 @@
 
 @media screen and (min-width: 440px) and (min-width: 700px){
 
-  .loginHeader {
+  .signupHeader {
     height: 75px;
   }
 
-  .loginLogo {
+  .signupLogo {
     height: 45px;
     top: 45%;
   }
 }
 
 @media screen and (min-width: 701px) and (max-width: 739px){
-  .loginHeader {
+  .signupHeader {
     height: 90px;
   }
 
-  .loginLogo {
+  .signupLogo {
     height: 45px;
     margin-top: 0;
     top: 50%;
@@ -45,7 +45,7 @@
 
 @media screen and (min-width: 740px) {
 
-  .login-wrapper {
+  .signup-wrapper {
     background-color: transparent
   }
 }

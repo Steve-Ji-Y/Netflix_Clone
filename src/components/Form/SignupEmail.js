@@ -2,8 +2,12 @@ import React from "react";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
 import styles from "./SignupEmail.module.css";
+import useInput from "../../hooks/useInput";
 
 const SignupEmail = () => {
+
+  const {isEmpty} = useInput(() => {});
+
   return (
     <div className={styles.signupWrapper}>
       <form>
@@ -12,7 +16,7 @@ const SignupEmail = () => {
       </h3>
       <div className={styles.emailSignup}>
         {/* this can be moved to generic UI input to trigger on focus label position & size change */}
-          <Input label="Email Address" input={{ id: "newUser_email" }} className={styles.signupInput}></Input>
+          <Input label="Email Address" input={{ id: "newUser_email", 'data-is-empty': isEmpty }} className={styles.signupInput}></Input>
         <Button className={styles.getStarted}>{`Get Started >`}</Button>
       </div>
     </form>

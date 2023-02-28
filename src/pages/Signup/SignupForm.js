@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import styles from "./LoginForm.module.css";
+import styles from "./SignupForm.module.css";
 import Input from "../../components/UI/Input";
 import Button from "../../components/UI/Button";
 import { auth } from "../../auth/firebase";

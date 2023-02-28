@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import SignIn from "../../components/SignIn/SignIn";
+import SignInBtn from "../../components/SignInBtn/SignInBtn";
 import Story from "./Story/index"
 
 const HomeHeader = () => {
   return (
     <>
       <Header>
-        <SignIn></SignIn>
+        <SignInBtn></SignInBtn>
       </Header>
       <Story></Story>
     </>

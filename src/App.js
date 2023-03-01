@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import browseLoader from "./pages/Browse/browse-loader";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,7 +36,9 @@ const router = createBrowserRouter([
         <Browse />
       </PrivateRoute>
     ),
+
     loader: browseLoader
+
   },
   {
     path: "signup",

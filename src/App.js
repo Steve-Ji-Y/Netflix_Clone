@@ -7,6 +7,7 @@ import Browse from "./pages/Browse";
 import { PublicRoute, PrivateRoute } from "./auth/authRoute";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
+import browseLoader from "./pages/Browse/browse-loader";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
         <Browse />
       </PrivateRoute>
     ),
+    loader: browseLoader
   },
   {
     path: "signup",

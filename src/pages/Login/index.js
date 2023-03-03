@@ -2,13 +2,13 @@ import React from "react";
 import Logo from "../../components/UI/Logo";
 import styles from "./Login.module.css";
 import LoginBody from "./LoginBody";
-import useBackground from "../../hooks/useBackground";
+import useScreenWidth from "../../hooks/useScreenWidth";
 import Background from "../../components/Background/Background";
 
 // TODO: fix logo by using an actual SVG as the sizing needs to be different from Home's logo sizing
 
 const Login = () => {
-  const isScreenLarge = useBackground();
+  const isScreenLarge = useScreenWidth(740);
 
 
   return (

@@ -3,13 +3,13 @@ import Logo from "../../components/UI/Logo";
 import styles from "./Signup.module.css";
 import SignupBody from "./SignupBody";
 import Background from "../../components/Background/Background";
-import useBackground from "../../hooks/useBackground";
+import useScreenWidth from "../../hooks/useScreenWidth";
 
 // TODO: fix logo by using an actual SVG as the sizing needs to be different from Home's logo sizing
 
 const Login = () => {
 
-  const isScreenLarge = useBackground();
+  const isScreenLarge = useScreenWidth(740);
 
   return (
     <div className={styles["login-wrapper"]}>

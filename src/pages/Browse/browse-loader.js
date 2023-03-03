@@ -4,8 +4,8 @@ import { redirect } from "react-router-dom";
 
 
 
-const browseLoader = () => {
 
+const browseLoader = () => {
 
   if (localStorage.getItem('uid')) {
     return 2
@@ -14,6 +14,5 @@ const browseLoader = () => {
   }
 
 }
-
 
 export default browseLoader

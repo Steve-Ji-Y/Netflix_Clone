@@ -7,10 +7,10 @@ const instance =  axios.create({
 })
 
 
-const fetchData = async (fetchURL=fetchConfig.Trending) => {
+const fetchData = async (fetchURL) => {
 
   const result = await instance.get(fetchURL);
-  console.log(result)
+  return result;
 
 }
 

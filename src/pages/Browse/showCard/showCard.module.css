@@ -1,0 +1,7 @@
+.card-wrapper {
+  flex: 0 0 50%;
+}
+.card-image {
+  max-width: 98%;
+  height: 100%;
+}

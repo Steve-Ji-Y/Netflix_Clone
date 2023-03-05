@@ -3,23 +3,23 @@ import { useAuth } from "../../context/AuthContext";
 import Browsebillboard from "./browseBillboard";
 import BrowseHeader from "./browseHeader/browseHeader";
 import styles from "./Browse.module.css";
+import { useLoaderData } from "react-router-dom";
 
 // testing ONLY
 import fetchData from "../../utils/axios";
+import ShowRow from "./showRow/showRow";
+import fetchConfig from "../../utils/tmdb";
 
 const Browse = () => {
-  const navigate = useNavigate();
   const { logout } = useAuth();
+  const collection = useLoaderData();
 
-  const clickHandler = async () => {
-      const result = await fetchData();
-  };
 
   return (
     <>
       <BrowseHeader />
       <Browsebillboard />
-      <button className={styles.testing} onClick={clickHandler}>fetch</button>
+      {collection.map((item) => {return <ShowRow key={item.category} category={item.category} shows={item.shows} />})}
     </>
   );
 };

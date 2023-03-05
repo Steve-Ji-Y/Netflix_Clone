@@ -32,6 +32,10 @@
   text-align: center;
 }
 
+.info-animation-container {
+  position:relative;
+}
+
 @media screen and ( min-width: 500px) {
 
   .info-container {

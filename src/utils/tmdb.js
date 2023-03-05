@@ -5,19 +5,18 @@ const api_key =  '8b934bec708de6f7e5b8851f78be478e';
 
 
 const fetchConfig =  {
-    key: api_key,
-    Trending: `/trending/all/week?api_key=${api_key}&language=en-US&with_networks=213`,
-    TopRated: `/movie/top_rated?api_key=${api_key}&language=en-US`,
-    ActionMovies: `/discover/movie?api_key=${api_key}&with_genres=28`,
-    ComedyMovies: `/discover/movie?api_key=${api_key}&with_genres=35`,
-    HorrorMovies: `/discover/movie?api_key=${api_key}&with_genres=27`,
-    RomanceMovies: `/discover/movie?api_key=${api_key}&with_genres=10749`,
-    Mystery: `/discover/movie?api_key=${api_key}&with_genres=9648`,
-    SciFi: `/discover/movie?api_key=${api_key}&with_genres=878`,
-    Western: `/discover/movie?api_key=${api_key}&with_genres=37`,
-    Animation: `/discover/movie?api_key=${api_key}&with_genres=16`,
-    TV: `/discover/movie?api_key=${api_key}&with_genres=10770`,
-}
+    Trending: `/trending/all/week?api_key=${api_key}`,
+    // Genre: `/genre/tv/list?api_key=${api_key}&language=en-US`,
+    // Test: `/configuration/languages?api_key=${api_key}`,
+    Action: `/discover/tv?api_key=${api_key}&language=en&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=10759&without_genres=16&with_networks=213`,
+    Anime: `/discover/tv?api_key=${api_key}&language=en&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=16&with_networks=213`,
+    Comedies: `/discover/tv?api_key=${api_key}&language=en&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=35&with_networks=213`,
+    Crime: `/discover/tv?api_key=${api_key}&language=en&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=80&with_networks=213`,
+    Dramas: `/discover/tv?api_key=${api_key}&language=en&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=18&with_networks=213`,
+    Documentaries: `/discover/tv?api_key=${api_key}&language=en&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=99&with_networks=213`,
+    Fantasy: `/discover/tv?api_key=${api_key}&language=en&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=10765&with_networks=213`,
+
+  }
 
 
 export default fetchConfig

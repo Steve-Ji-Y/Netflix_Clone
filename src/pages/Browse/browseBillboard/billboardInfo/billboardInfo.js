@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const BillboardInfo = () => {
   return (
+
     <div className={styles["info-container"]}>
       <div className={styles["info-content"]}>
         <h1 className={styles["info-title"]}>The Last of Us</h1>

@@ -32,9 +32,9 @@ const router = createBrowserRouter([
   {
     path: "/browse",
     element: (
-      <PrivateRoute>
+      // <PrivateRoute>
         <Browse />
-      </PrivateRoute>
+      // </PrivateRoute>
     ),
 
     loader: browseLoader

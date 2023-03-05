@@ -14,3 +14,27 @@
   top: 50%;
   left: 50%;
 }
+
+body, html {
+  font-size: 1.5vw;
+}
+
+
+@media screen and (min-width: 500px) {
+  body, html {
+    font-size: 1.2vw;
+  }
+}
+
+
+@media screen and (min-width: 950px) {
+  body, html {
+    font-size: 0.85vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body, html {
+    font-size: 14px;
+  }
+}

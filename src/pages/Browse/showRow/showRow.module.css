@@ -3,7 +3,7 @@
 }
 
 .showRow-wrapper {
-  margin: 3vw 0;
+  margin: 2vw 0;
   width: 100vw;
   z-index: 10;
   overflow: hidden;
@@ -60,7 +60,7 @@
 .showRow-title {
   color: #fff;
   margin: 0;
-  font-size: 1rem;
+  font-size: 14px;
   margin-left: 4%;
   margin-bottom: 5px;
 }

@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const useSlider = (maxCounter) => {
   const [counter, setCounter] = useState(0);
   const [isTouched, setIsTouched] = useState(false);
@@ -15,16 +14,21 @@ const useSlider = (maxCounter) => {
 
   const clickHandlerRight = () => {
     setIsTouched(true);
-    setCounter( (prev) => {
-      return (prev - 1 + maxCounter) % maxCounter
-    });
+    setTimeout(() => {
+      setCounter((prev) => {
+        return (prev + 1) % maxCounter;
+      });
+    }, 300);
   };
 
   const clickHandlerLeft = () => {
-    setCounter( (prev) => {
-      return (prev + 1) % maxCounter
-    });
-  }
+
+    setTimeout(() => {
+      setCounter((prev) => {
+        return (prev - 1 + maxCounter) % maxCounter;
+      });
+    }, 300);
+  };
 
   return {
     counter,
@@ -34,8 +38,7 @@ const useSlider = (maxCounter) => {
     clickHandlerLeft,
     hoverHandler,
     blurHandler,
-  }
-}
-
+  };
+};
 
 export default useSlider;

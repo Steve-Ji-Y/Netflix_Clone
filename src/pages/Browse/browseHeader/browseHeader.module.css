@@ -1,6 +1,6 @@
 .browse-Header {
   height: 40px;
-  z-index: 10;
+  z-index: 20;
   display: flex;
   align-items: center;
   padding: 0 4%;
@@ -50,7 +50,6 @@
 @media screen and (min-width: 950px) {
   .browse-Header {
     height: 70px;
-    padding: 0 50px;
   }
   .browse-Header img {
     width: 95px;
@@ -58,4 +57,11 @@
   .browse-Signout {
     font-size: 16px;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .browse-Header {
+    padding: 0 60px;
+  }
+
 }

@@ -30,6 +30,7 @@
   padding: 0.2rem;
   width: 50px;
   text-align: center;
+  cursor: pointer;
 }
 
 .info-animation-container {
@@ -60,9 +61,6 @@
 
 @media screen and  ( min-width: 950px) {
 
-  .info-container {
-    padding-left: 50px;
-  }
 
   .info-title {
     margin: 0;
@@ -88,6 +86,9 @@
 
 @media screen and  ( min-width: 1440px) {
 
+  .info-container {
+    padding-left: 60px;
+  }
 
   .info-title {
     margin: 0;

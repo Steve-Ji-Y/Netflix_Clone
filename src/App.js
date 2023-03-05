@@ -4,7 +4,8 @@ import Login from "./pages/Login/index";
 import ErrorPage from "./pages/Error/index";
 import Signup from "./pages/Signup/index";
 import Browse from "./pages/Browse";
-import { PublicRoute, PrivateRoute } from "./auth/authRoute";
+import BrowseFocus from "./pages/Browse/BrowseFocus";
+import { PublicRoute } from "./auth/authRoute";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import browseLoader from "./pages/Browse/browse-loader";
@@ -32,13 +33,11 @@ const router = createBrowserRouter([
   {
     path: "/browse",
     element: (
-      // <PrivateRoute>
         <Browse />
-      // </PrivateRoute>
+
     ),
-
-    loader: browseLoader
-
+    loader: browseLoader,
+    children: [{path: ":id", element: <BrowseFocus />}]
   },
   {
     path: "signup",

@@ -2,9 +2,8 @@ import React from "react";
 import styles from "./billboardInfo.module.css";
 import { Link } from "react-router-dom";
 
-const BillboardInfo = () => {
+const BillboardInfo = ({show}) => {
   return (
-
     <div className={styles["info-container"]}>
       <div className={styles["info-content"]}>
         <h1 className={styles["info-title"]}>The Last of Us</h1>
@@ -14,7 +13,7 @@ const BillboardInfo = () => {
           of an oppressive quarantine zone.
         </p>
       </div>
-      <Link to="./" className={styles.moreInfo}>More Info</Link>
+      <Link to={`${show.id}`} className={styles.moreInfo} >More Info</Link>
     </div>
   );
 };

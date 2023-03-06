@@ -1,5 +1,5 @@
-import styles from "./browseBillboard.module.css";
-import BillboardInfo from "./billboardInfo/billboardInfo";
+import styles from "./BrowseBillboard.module.css";
+import BillboardInfo from "./BillboardInfo/BillboardInfo";
 
 const BrowseBillboard = (props) => {
   return (

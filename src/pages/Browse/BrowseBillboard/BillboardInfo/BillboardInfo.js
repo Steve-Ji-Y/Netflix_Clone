@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./billboardInfo.module.css";
+import styles from "./BillboardInfo.module.css";
 import { Link } from "react-router-dom";
 
 const BillboardInfo = ({show}) => {

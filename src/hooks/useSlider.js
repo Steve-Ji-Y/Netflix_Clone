@@ -18,7 +18,7 @@ const useSlider = (maxCounter) => {
       setCounter((prev) => {
         return (prev + 1) % maxCounter;
       });
-    }, 300);
+    }, 200);
   };
 
   const clickHandlerLeft = () => {
@@ -27,7 +27,7 @@ const useSlider = (maxCounter) => {
       setCounter((prev) => {
         return (prev - 1 + maxCounter) % maxCounter;
       });
-    }, 300);
+    }, 200);
   };
 
   return {

@@ -1,0 +1,13 @@
+.detail-tag {
+  margin: 0.5em 0.5em 0.5em 0;
+  word-break: break-word;
+  width: 100%;
+}
+
+.detail-tag-label {
+  color: #777;
+}
+
+.detail-tag-item {
+  margin-left: 0.2em;
+}

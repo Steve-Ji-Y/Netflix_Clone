@@ -5,21 +5,19 @@
   width: 100vw;
   height: 100vh;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal {
   position: absolute;
-  top: 8vh;
-  left: 5vw;
-  width: 90vw;
-  height: 85vh;
+  top: 5vh;
+  left: 1vw;
+  width: 98vw;
+  height: auto;
+  padding-bottom: 5vh;
   background-color: #181818;
-  padding: 0;
   margin: 0;
-  border: 0;
-  border-radius: 5px;
-  animation: pop 500ms ease-out forwards;
+  animation: pop 300ms ease-out forwards;
   z-index: 2000;
 }
 
@@ -29,7 +27,7 @@
 
 @keyframes pop {
   from {
-    transform: translateY(-50%) scale(0.8);
+    transform: translateY(50%) scale(0.8);
     opacity: 0;
   }
   to {
@@ -46,5 +44,30 @@
   to {
     transform: translateY(-50%) scale(0.8);
     opacity: 0;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+  .modal {
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .modal {
+    top: 5vh;
+    left: 10vw;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal {
+    top: 5vh;
+    left: 15vw;
+    width: 70vw;
   }
 }

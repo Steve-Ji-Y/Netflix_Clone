@@ -1,0 +1,29 @@
+.detail-wrapper {
+  position: relative;
+  padding: 0 4%;
+  font-size: 12px;
+
+}
+
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Start display it as a grid once screen gets wide enough */
+
+@media screen and (min-width: 500px) {
+  .detail-wrapper {
+      display: grid;
+      column-gap: 2em;
+      grid-template-columns: minmax(0,2fr) minmax(0,1fr);
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .detail-wrapper  {
+    font-size: 14px;
+  }
+}

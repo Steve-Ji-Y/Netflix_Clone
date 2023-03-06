@@ -1,4 +1,4 @@
-import styles from "./browseHeader.module.css";
+import styles from "./BrowseHeader.module.css";
 import React from "react";
 import Logo from "../../../components/UI/Logo";
 import { Link } from "react-router-dom";

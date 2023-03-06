@@ -1,0 +1,43 @@
+.preview-bg-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.preview-bg-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 5px;
+}
+
+.preview-title {
+  font-family: Segoe Script, cursive;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  margin: 0;
+  padding: 0;
+}
+
+.bgTransition {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 20%,hsla(0,0%,8%,.35) 35%,hsla(0,0%,8%,.58) 50%,#151515 75%,#181818);
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 950px) {
+  .preview-title {
+    font-size: 4.5rem;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .preview-title {
+    font-size: 50px;
+  }
+}

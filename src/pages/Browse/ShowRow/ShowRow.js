@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./showRow.module.css";
-import ShowCard from "../showCard/showCard";
+import styles from "./ShowRow.module.css";
+import ShowCard from "../ShowCard/ShowCard";
 import Button from "../../../components/UI/Button";
 import useSlider from "../../../hooks/useSlider";
 

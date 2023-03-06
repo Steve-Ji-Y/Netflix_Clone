@@ -3,9 +3,12 @@
 }
 .card-image {
   max-width: 98%;
-  height: 100%;
 }
 
+
+.card-link:hover img {
+  display: block;
+}
 
 @media screen and (min-width: 500px) {
   .card-wrapper {

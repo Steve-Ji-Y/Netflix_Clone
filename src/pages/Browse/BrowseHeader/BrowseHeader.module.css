@@ -27,8 +27,11 @@
   line-height: normal;
   cursor: pointer;
   font-weight: 420;
-  padding: 0.2rem 0.3rem;
-  width: auto;
+  padding: 0.5rem 0.7rem;
+}
+
+.browse-Signout:hover {
+  background-color: rgba(229, 9, 20, 0.7);
 }
 
 @media screen and (min-width: 500px) {

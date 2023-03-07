@@ -7,7 +7,6 @@ const tagsConvert = (tags) => {
 
 // to be dynamically generated
 const BrowseFocusTag = ({ label, tags }) => {
-  console.log(tagsConvert(tags));
   return (
     <div className={styles["detail-tag"]}>
       <span className={styles["detail-tag-label"]}>{label}</span>

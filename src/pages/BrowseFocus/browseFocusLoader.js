@@ -29,6 +29,7 @@ const browseFocusLoader = async ({ params }) => {
     const showVideos = await showDetailFetcher(fetchurls.videos);
     const showKeywords = await showDetailFetcher(fetchurls.keywords);
     const showInfo = {
+      title: showDetail.name,
       backdrop: showDetail.backdrop_path,
       num_seasons: showDetail.number_of_seasons,
       num_episodes: showDetail.number_of_episodes,
@@ -37,7 +38,6 @@ const browseFocusLoader = async ({ params }) => {
       keywords: showKeywords.results.map((keyword) => keyword.name),
       video: showVideos.results.filter(result => result.type === 'Trailer' && result.site === 'YouTube')[0]?.key,
     };
-    console.log(showInfo)
     return showInfo;
   } else {
     return redirect("/login");

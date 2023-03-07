@@ -22,10 +22,10 @@
 
 }
 
-
-@media screen and (min-width: 1100px) {
-
-  .billBoard-wrapper {
-    height: 55vw;
-  }
+.billBoard-transition {
+  position: absolute;
+  width: 100%;
+  height: 16.25vw;
+  background: linear-gradient(180deg,hsla(0,0%,8%,0) 0,hsla(0,0%,8%,.15) 20%,hsla(0,0%,8%,.35) 35%,hsla(0,0%,8%,.58) 50%,hsla(0,0%,8%,.7) 75%,#111);
+  z-index: 20;
 }

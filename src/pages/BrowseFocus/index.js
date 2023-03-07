@@ -8,14 +8,13 @@ import BrowseFocusPreview from "./BrowseFocusPreview/BrowseFocusPreview";
 const BrowseFocus = () => {
   const navigate = useNavigate();
   const showInfo = useLoaderData();
-  console.log(showInfo)
   const closeHandler = () => {
     console.log('hit')
     navigate("../")
   }
 
   return <Modal onClose={closeHandler} className={styles.BrowseContent}>
-    <BrowseFocusPreview img={showInfo.backdrop}/>
+    <BrowseFocusPreview img={showInfo.backdrop} title={showInfo.title}/>
     <BrowseFocusDetail showInfo={showInfo}/>
   </Modal>
 }

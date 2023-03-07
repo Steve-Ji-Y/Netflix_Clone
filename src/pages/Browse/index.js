@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import Browsebillboard from "./BrowseBillboard";
 import BrowseHeader from "./BrowseHeader/BrowseHeader";
-import ShowRow from "./ShowRow/ShowRow";
+import BrowseShows from "./BrowseShows/BrowseShows";
 import styles from "./Browse.module.css";
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
@@ -10,7 +10,6 @@ import { Outlet } from "react-router-dom";
 
 // testing ONLY
 import fetchData from "../../utils/axios";
-
 import fetchConfig from "../../utils/tmdb";
 
 
@@ -34,7 +33,7 @@ const Browse = () => {
       <Outlet />
       <BrowseHeader />
       <Browsebillboard show={billBoardShow}/>
-      {collection.map((item) => {return <ShowRow key={item.category} category={item.category} shows={item.shows} />})}
+      <BrowseShows collection={collection} />
     </>
   );
 };

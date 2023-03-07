@@ -4,7 +4,7 @@
 
 .showRow-wrapper {
   position: relative;
-  margin: 3vw 0;
+  margin: 2vw 0;
   width: 100vw;
   z-index: 30;
   overflow: hidden;
@@ -74,6 +74,7 @@
 @media screen and (min-width: 950px) {
   .showRow-title {
     font-size: 2rem;
+    margin-bottom: 6px;
   }
 
   .showRow-handle {
@@ -89,6 +90,8 @@
 @media screen and (min-width: 1440px) {
   .showRow-title {
     font-size: 1.7rem;
+    margin-left: 60px;
+    margin-bottom: 10px;
   }
   .showRow-handle {
     flex-basis: 60px;

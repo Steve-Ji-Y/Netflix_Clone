@@ -4,7 +4,7 @@ import ShowCard from "../ShowCard/ShowCard";
 import Button from "../../../components/UI/Button";
 import useSlider from "../../../hooks/useSlider";
 
-const ShowRow = ({ shows, category, onMouseOver, onMouseOut, activeCardId, lastChangeTime }) => {
+const ShowRow = ({ shows, category }) => {
   const {
     counter,
     isTouched,
@@ -44,10 +44,6 @@ const ShowRow = ({ shows, category, onMouseOver, onMouseOut, activeCardId, lastC
                 key={show.id}
                 show={show}
                 id={show.id}
-                onMouseOver={onMouseOver}
-                onMouseOut={onMouseOut}
-                activeCardId={activeCardId}
-                lastChangeTime={lastChangeTime}
               />
             );
           })}

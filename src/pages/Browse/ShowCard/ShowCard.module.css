@@ -1,31 +1,45 @@
 .card-wrapper {
   flex: 0 0 50%;
   width: 100%;
-  height: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all .3s ease-in 0.2s;
+  cursor: pointer;
+  overflow: visible;
+  transform: translateZ(0);
 }
 .card-image {
-  max-width: 98%;
-  border-radius: 5px;
+  width: 98%;
+  height: 98%;
   object-fit: cover;
 }
 
-.card-link {
-  color: white;
-  display: block;
+.card-wrapper:hover {
+  transform: scale(1.4);
+  z-index: 50;
+  transition: all .3s ease-in 0.2s;
 }
 
-.card-overlay {
+.card-info {
+  width: 100%;
+  display: none;
+  background-color: #fff;
+  transition: all .3s ease-in 0.2s;
+}
+
+.card-wrapper:hover .card-info {
+  height: 40px;
   position: absolute;
-  background-color: aquamarine;
-  cursor: pointer;
-  width: 150%;
-  height: 200%;
-  top: -25%;
-  left: 0;
-  z-index: 100;
+  display: block;
+  top: 100%;
+  z-index: 1000;
+  transition: all .3s ease-in 0.2s;
 }
 
+.card-info-wrapper {
+  z-index: 1000;
+  position: relative;
+}
 
 @media screen and (min-width: 500px) {
   .card-wrapper {

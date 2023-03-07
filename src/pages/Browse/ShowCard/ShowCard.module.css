@@ -10,35 +10,65 @@
 }
 .card-image {
   width: 98%;
-  height: 98%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 4px;
 }
 
+
+.card-info {
+  width: 98%;
+  display: none;
+  background-color: #181818;
+  transition: all .3s ease-in 0.2s;
+  color: #fff;
+}
+
+
+
 .card-wrapper:hover {
-  transform: scale(1.4);
+  transform: scale(1.3);
   z-index: 50;
   transition: all .3s ease-in 0.2s;
 }
 
-.card-info {
-  width: 100%;
-  display: none;
-  background-color: #fff;
-  transition: all .3s ease-in 0.2s;
+.card-wrapper:hover .card-image {
+  border-radius: 4px 4px 0 0
 }
 
 .card-wrapper:hover .card-info {
-  height: 40px;
+  height: 50%;
   position: absolute;
   display: block;
   top: 100%;
-  z-index: 1000;
   transition: all .3s ease-in 0.2s;
 }
 
-.card-info-wrapper {
-  z-index: 1000;
-  position: relative;
+.title {
+  padding-left: 5%;
+  font-size: 1rem;
+  width: 70%;
+}
+
+.card-moreInfo {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  z-index: 2;
+}
+
+.moreInfoIcon {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.moreInfoIcon:hover {
+  background-color: #fff;
+
 }
 
 @media screen and (min-width: 500px) {

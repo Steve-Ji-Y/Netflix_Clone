@@ -11,13 +11,14 @@ const showsFetcher = async (url) => {
           return {
             id: show.id,
             title: show.name || show.title,
-            backdrop: `https://image.tmdb.org/t/p/w780${show.backdrop_path}`,
+            backdrop: show.backdrop_path,
             poster: show.poster_path,
             overview: show.overview,
             language: show.original_language,
           };
         })
-        return shows;
+        const sortedShows = shows.sort(() => {return Math.random() - 0.5});
+        return sortedShows;
     } else {
       throw new Error('Error fetching data');
     }

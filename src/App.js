@@ -5,12 +5,11 @@ import ErrorPage from "./pages/Error/index";
 import Signup from "./pages/Signup/index";
 import Browse from "./pages/Browse";
 import BrowseFocus from "./pages/BrowseFocus";
-import { PublicRoute } from "./auth/authRoute";
+import { PublicRoute, PrivateRoute } from "./auth/authRoute";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import browseLoader from "./pages/Browse/browse-loader";
 import browseFocusLoader from "./pages/BrowseFocus/browseFocusLoader";
-
 
 const router = createBrowserRouter([
   {
@@ -34,11 +33,14 @@ const router = createBrowserRouter([
   {
     path: "/browse",
     element: (
+      <PrivateRoute>
         <Browse />
-
+      </PrivateRoute>
     ),
     loader: browseLoader,
-    children: [{path: ":id", element: <BrowseFocus />, loader: browseFocusLoader}]
+    children: [
+      { path: ":id", element: <BrowseFocus />, loader: browseFocusLoader },
+    ],
   },
   {
     path: "signup",

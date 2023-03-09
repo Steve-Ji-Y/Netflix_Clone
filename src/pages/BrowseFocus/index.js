@@ -9,7 +9,6 @@ const BrowseFocus = () => {
   const navigate = useNavigate();
   const showInfo = useLoaderData();
   const closeHandler = () => {
-    console.log('hit')
     navigate("../")
   }
 

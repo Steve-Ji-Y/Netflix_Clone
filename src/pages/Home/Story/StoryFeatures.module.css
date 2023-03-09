@@ -5,12 +5,12 @@
 }
 
 .features h1 {
-  font-size: 1.625rem;
+  font-size: 1.625em;
   margin-bottom: 5px;
 }
 
 .features h2 {
-  font-size: 1.125rem;
+  font-size: 1.125em;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -45,10 +45,10 @@
   }
 
   .features h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
   }
   .features h2 {
-    font-size: 1.25rem;
+    font-size: 1.25em;
   }
   .cardImg {
     margin: auto;
@@ -66,20 +66,20 @@
   }
 
   .features h1 {
-    font-size: 3.125rem;
+    font-size: 3.125em;
     line-height:1.1
   }
   .features h2 {
-    font-size: 1.625rem;
+    font-size: 1.625em;
 
   }
 
   .cardWrapper:nth-child(odd) > :first-child {
-    padding: 0 3rem 0 0;
+    padding: 0 3em 0 0;
   }
 
   .cardWrapper:nth-child(even) > :first-child {
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 3em;
   }
 
   .cardWrapper {

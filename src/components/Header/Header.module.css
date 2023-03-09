@@ -4,7 +4,7 @@
   align-items: flex-start;
   justify-content: space-between;
   z-index: 10;
-  padding: 1rem 0 1rem 0;
+  padding: 16px 0 16px 0;
   margin: 0 5%;
 }
 
@@ -22,14 +22,14 @@
 
 @media only screen and (min-width: 550px) and (max-width: 949px) {
   .header {
-    margin: 0 2.8rem;
-    padding: 1.5rem 0 1.5rem 0;
+    margin: 0 45px;
+    padding: 24px 0 24px 0;
   }
 }
 
 @media only screen and (min-width: 950px) {
   .header {
-    margin: 0 3.5rem;
-    padding: 2rem 0 2rem 0;
+    margin: 0 56px;
+    padding: 24px 0 24px 0;
   }
 }

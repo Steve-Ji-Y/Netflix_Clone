@@ -1,8 +1,8 @@
 .homeWrapper {
   overflow: hidden;
-
+  font-size: 16px;
 }
 
 .homeContent {
-  min-width: 320px;
+  min-width: 360px;
 }

@@ -31,12 +31,12 @@
 }
 
 .title {
-  font-size: 1.75rem;
+  font-size: 1.75em;
   margin: 0rem auto;
 }
 
 .subtitle {
-  font-size: 1.125rem;
+  font-size: 1.125em;
   font-weight: 400;
   margin: 0.5rem auto;
 }
@@ -66,12 +66,12 @@
   }
 
   .title {
-    font-size: 3.125rem;
+    font-size: 3.125em;
   }
 
   .subtitle {
-    font-size: 1.625rem;
-    margin: 1rem auto;
+    font-size: 1.625em;
+    margin: 1em auto;
 
   }
 
@@ -103,12 +103,12 @@
   }
 
   .title {
-    font-size: 3.125rem;
+    font-size: 3.125em;
   }
 
   .subtitle {
-    font-size: 1.625rem;
-    margin: 1rem auto;
+    font-size: 1.625em;
+    margin: 1em auto;
   }
 
   .mainStory {
@@ -119,7 +119,7 @@
 @media screen and (min-width: 1450px) {
 
   .title {
-    font-size: 4rem;
+    font-size: 4em;
   }
 
 

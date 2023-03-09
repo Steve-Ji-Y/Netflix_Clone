@@ -9,7 +9,7 @@
   position:relative;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1em;
   max-width: 500px;
   margin: 0 auto;
 
@@ -18,7 +18,7 @@
 .promotionMsg {
   display: block;
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 1.125em;
   padding-bottom: 20px;
   font-weight: 400;
   max-width: 700px;
@@ -26,11 +26,11 @@
 }
 
 .getStarted {
-  font-size: 1rem;
+  font-size: 1em;
   background-color: #e50914;
   color: #fff;
   border: none;
-  padding: 0 1rem;
+  padding: 0 1em;
   min-height: 40px;
   line-height: 40px;
   border-radius: 3px;
@@ -68,13 +68,13 @@
   }
 
   .getStarted {
-    font-size: 1.625rem;
+    font-size: 1.625em;
     min-height: 60px;
     white-space: nowrap;
-    padding: 0 1.625rem;
+    padding: 0 1.625em;
   }
   .promotionMsg {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     padding: 0 5%;
     padding-bottom: 10px;
   }
@@ -83,7 +83,7 @@
 
 @media screen and (min-width: 1450px) {
   .getStarted {
-    font-size: 1.875rem;
+    font-size: 1.875em;
     min-height: 70px;
   }
 

@@ -2,13 +2,13 @@
   display: block;
   background-color: #e50914;
   color: white;
-  font-size: 0.9rem;
+  font-size: 14px;
   text-decoration: none;
   border-radius: 3px;
   line-height: normal;
   cursor: pointer;
   font-weight: 420;
-  padding: 0.25rem 0.5rem;
+  padding: 4px 8px;
 }
 
 
@@ -16,7 +16,7 @@
 @media only screen and (min-width: 500px) {
   .signin{
     height: auto;
-    padding: 0.43rem 1.1rem;
-    font-size: 1rem;
+    padding: 7px 17px;
+    font-size: 16px;
   }
 }

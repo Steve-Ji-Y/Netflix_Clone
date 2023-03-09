@@ -8,7 +8,7 @@
 
 .labelFocus {
   position: absolute;
-  margin-left: 0.7rem;
+  margin-left: 0.7em;
   top: 10%;
   color: #8c8c8c;
   font-size: 12px !important;
@@ -20,7 +20,7 @@
 
 .label {
   position: absolute;
-  margin-left: 0.7rem;
+  margin-left: 0.7em;
   top: 50%;
   color: #8c8c8c;
   transform: translateY(-50%);
@@ -53,18 +53,18 @@
   }
 
   .label {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
 
 @media screen and (min-width: 740px) {
   .labelWrapper {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     height: 60px;
     min-width: 450px;
   }
   .label {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }

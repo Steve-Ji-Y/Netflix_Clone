@@ -27,6 +27,7 @@ const Browse = () => {
   // }, [collection]);
 
   useEffect(() => {console.log(collection)}, [])
+  console.log(1)
 
   const showCollection = collection.map((category) => {
     if (category.category === 'Trending') {

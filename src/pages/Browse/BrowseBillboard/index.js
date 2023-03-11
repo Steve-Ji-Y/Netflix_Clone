@@ -1,6 +1,5 @@
 import styles from "./BrowseBillboard.module.css";
 import BillboardInfo from "./BillboardInfo/BillboardInfo";
-import { useEffect, useState } from "react";
 
 const BrowseBillboard = ({ show, useBigBg }) => {
   return (

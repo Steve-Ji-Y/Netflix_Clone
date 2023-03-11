@@ -7,5 +7,5 @@ const Button = (props) => {
     <button className={className} onClick={props.onClick} style={props.style}>{props.children}</button>
   )
 }
-
+console.log(Button);
 export default Button
